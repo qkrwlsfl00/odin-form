@@ -9,6 +9,7 @@
   <body>
     <div class="background">
       <div class="logo-container">
+        <img src="/odin-lined.png" alt="odin logo" width="70" height="93" />
         <h1>ODIN</h1>
       </div>
     </div>
@@ -18,38 +19,50 @@
         in your life to help you realize your deepest dreams. Sign up
         <em>now</em> to get started
       </p>
+      <br />
       <p>You <em>know</em> you want to.</p>
-      <form class="signup-form">
-        <div class="form-container">
-          <h2>Let's do this!</h2>
-          <div class="form-group">
-            <label for="first-name">FIRST NAME</label>
-            <input id="first-name" />
+      <div class="form-container">
+        <form class="signup-form" id="signup-form">
+          <p>Let's do this!</p>
+          <div class="form-flex-container">
+            <div class="form-group">
+              <label for="first-name">FIRST NAME</label>
+              <input id="first-name" name="first_name" type="text" required />
+            </div>
+            <div class="form-group">
+              <label for="last-name">LAST NAME</label>
+              <input id="last-name" name="first_name" type="text" />
+            </div>
+            <div class="form-group">
+              <label for="email">EMAIL</label>
+              <input id="email" type="email" />
+            </div>
+            <div class="form-group">
+              <label for="phone-number">PHONE NUMBER</label>
+              <input id="phone-number" type="tel" />
+            </div>
+            <div class="form-group">
+              <label for="password">PASSWORD</label>
+              <input
+                id="password"
+                type="password"
+                minlength="6"
+                maxlength="13"
+                required
+              />
+              <span class="password-hint"
+                >Password must be 6-13 characters</span
+              >
+            </div>
+            <div class="form-group">
+              <label for="password-confirm">CONFIRM PASSWORD</label>
+              <input id="password-confirm" type="password" required />
+            </div>
           </div>
-          <div class="form-group">
-            <label for="last-name">LAST NAME</label>
-            <input id="last-name" />
-          </div>
-          <div class="form-group">
-            <label for="email">EMAIL</label>
-            <input id="email" />
-          </div>
-          <div class="form-group">
-            <label for="phone-number">PHONE NUMBER</label>
-            <input id="phone-number" type="tel" />
-          </div>
-          <div class="form-group">
-            <label for="password">PASSWORD</label>
-            <input id="password" />
-          </div>
-          <div class="form-group">
-            <label for="password-confirm">CONFIRM PASSWORD</label>
-            <input id="password-confirm" />
-          </div>
-        </div>
-        <button type="submit">Create Account</button>
-      </form>
-      <p>Already have an account? <a href="#">Log in</a></p>
+        </form>
+      </div>
+      <button type="submit" form="signup-form">Create Account</button>
+      <p class="login-help">Already have an account? <a href="#">Log in</a></p>
     </div>
   </body>
 </html>
