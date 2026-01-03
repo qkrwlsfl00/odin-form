@@ -54,11 +54,11 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 10%;
-  width: 70%;
-  max-width: 600px;
+  width: 100%;
+  max-width: 500px;
 }
 .form-group {
-  width: 40%;
+  width: 45%;
   margin: 10px 0;
 }
 label {
